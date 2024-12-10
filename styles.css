@@ -2,6 +2,15 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: norse; 
+    src: url(./fonts/norse-bold.woff2);
+}
+
+a:visited {
+    color: white;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -24,9 +33,9 @@ body {
     object-fit: cover;
 }
 
-.left label {
-    position: absolute;
-    bottom: 3vh;
+.left .odin {
+    font-family: norse;
+    font-size: 5em;
 }
 
 .strip {
@@ -39,9 +48,21 @@ body {
     justify-content: space-around;
 }
 
-.strip img{
+.stripcontainer{
+    display: flex;
     height: 100%;
+    align-items: center;
+    gap: 1vw;
+}
+
+.strip img{
+    height: 80%;
     width: auto;
+}
+
+.credit {
+    position: absolute;
+    top: 95vh;
 }
 
 .right {
@@ -49,5 +70,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    align-items: flex-start;
+    justify-content: center;
 }
 
